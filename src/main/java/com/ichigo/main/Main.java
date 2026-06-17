@@ -12,5 +12,7 @@ public class Main{
         BankService service = new BankService(tempRepo);
         service.createAccount("Ashish","1234567890",555555.6);
         System.out.println(tempRepo.getAllAccounts());
+        service.withdraw(56555,"1234567890");
+        System.out.println(tempRepo.findAccountByNumber("1234567890"));
     }
 }
